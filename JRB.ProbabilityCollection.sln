@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JRB.ProbabilityCollection", "JRB.ProbabilityCollection\JRB.ProbabilityCollection.csproj", "{33E9C061-A1BA-4CDB-87A5-659D2EB8E451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JRB.ProbabilityCollection.TestConsole", "JRB.ProbabilityCollection.TestConsole\JRB.ProbabilityCollection.TestConsole.csproj", "{2B4C6D9C-7E3B-401E-80ED-D4CF8CECB676}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33E9C061-A1BA-4CDB-87A5-659D2EB8E451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E9C061-A1BA-4CDB-87A5-659D2EB8E451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E9C061-A1BA-4CDB-87A5-659D2EB8E451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E9C061-A1BA-4CDB-87A5-659D2EB8E451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4C6D9C-7E3B-401E-80ED-D4CF8CECB676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4C6D9C-7E3B-401E-80ED-D4CF8CECB676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4C6D9C-7E3B-401E-80ED-D4CF8CECB676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4C6D9C-7E3B-401E-80ED-D4CF8CECB676}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84E37DE6-7DB7-4349-AA05-F55E8AF03F61}
+	EndGlobalSection
+EndGlobal
