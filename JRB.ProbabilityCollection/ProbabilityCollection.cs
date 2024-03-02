@@ -47,6 +47,8 @@ namespace JRB.ProbabilityCollection
             _options.Add(option);
         }
 
+        public void Add(ProbabilityItem<T> probabilityItem) => Add(probabilityItem.Probability, probabilityItem.Item);
+
         public T GetRandom()
         {
             int index = Rdm.Next(ALL_LOWER_INCLUSIVE, _allUpperExclusive);

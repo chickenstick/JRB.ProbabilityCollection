@@ -27,9 +27,12 @@ namespace JRB.ProbabilityCollection.TestConsole
             for (int i = 0; i < dictionary.Count; i++)
             {
                 char c = dictionary.Keys.ElementAt(i);
-                int probability = dictionary.Count - i;
+                int probability = dictionary.Count - i + 1;
                 collection.Add(probability, c);
             }
+
+            collection.Add(new ProbabilityItem<char>(1, 'E'));
+            dictionary.Add('E', 0);
 
             dictionary.Add('X', 0);
             
