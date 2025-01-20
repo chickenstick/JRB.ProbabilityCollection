@@ -15,6 +15,8 @@ namespace JRB.ProbabilityCollection.TestConsole
 
         static void TestProbabilityCollection()
         {
+            Random random = Random.Shared;
+
             Dictionary<char, int> dictionary = new Dictionary<char, int>()
             {
                 { 'A', 0 },
@@ -39,7 +41,7 @@ namespace JRB.ProbabilityCollection.TestConsole
             Stopwatch sw = Stopwatch.StartNew();
             for (int i = 0; i < 1000000; i++)
             {
-                char c = collection.GetRandom();
+                char c = collection.GetRandom(random);
                 if (dictionary.ContainsKey(c))
                 {
                     dictionary[c] += 1;

@@ -10,8 +10,4 @@
     <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="JRB.Randomizer" Version="1.0.1" />
-  </ItemGroup>
-
 </Project>

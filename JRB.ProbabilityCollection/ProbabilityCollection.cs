@@ -1,12 +1,9 @@
-﻿using JRB.Randomizer;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using Rdm = JRB.Randomizer.Randomizer;
 
 namespace JRB.ProbabilityCollection
 {
@@ -49,9 +46,9 @@ namespace JRB.ProbabilityCollection
 
         public void Add(ProbabilityItem<T> probabilityItem) => Add(probabilityItem.Probability, probabilityItem.Item);
 
-        public T GetRandom()
+        public T GetRandom(Random random)
         {
-            int index = Rdm.Next(ALL_LOWER_INCLUSIVE, _allUpperExclusive);
+            int index = random.Next(ALL_LOWER_INCLUSIVE, _allUpperExclusive);
             return _options.Where(o => o.Range.IsInRange(index)).Select(o => o.Item).Single();
         }
 
