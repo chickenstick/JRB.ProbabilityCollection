@@ -31,6 +31,15 @@ namespace JRB.ProbabilityCollection
             _options = new List<RangeOption<T>>();
         }
 
+        public ProbabilityCollection(IEnumerable<ProbabilityItem<T>> options)
+            : this()
+        {
+            foreach (ProbabilityItem<T> opt in options)
+            {
+                Add(opt);
+            }
+        }
+
         #endregion
 
         #region - Methods -

@@ -25,13 +25,8 @@ namespace JRB.ProbabilityCollection.TestConsole
                 { 'D', 0 },
             };
 
-            ProbabilityCollection<char> collection = new ProbabilityCollection<char>();
-            for (int i = 0; i < dictionary.Count; i++)
-            {
-                char c = dictionary.Keys.ElementAt(i);
-                int probability = dictionary.Count - i + 1;
-                collection.Add(probability, c);
-            }
+            IEnumerable<ProbabilityItem<char>> probabilities = dictionary.Select((item, i) => new ProbabilityItem<char>(dictionary.Count - i + 1, item.Key));
+            ProbabilityCollection<char> collection = new ProbabilityCollection<char>(probabilities);
 
             collection.Add(new ProbabilityItem<char>(1, 'E'));
             dictionary.Add('E', 0);
@@ -39,7 +34,7 @@ namespace JRB.ProbabilityCollection.TestConsole
             dictionary.Add('X', 0);
             
             Stopwatch sw = Stopwatch.StartNew();
-            for (int i = 0; i < 1000000; i++)
+            for (int i = 0; i < 1_000_000; i++)
             {
                 char c = collection.GetRandom(random);
                 if (dictionary.ContainsKey(c))
